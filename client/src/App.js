@@ -5,6 +5,7 @@ import OneProduct from './pages/OneProduct/OneProduct';
 import Products from './pages/Products/Products';
 import Nav from './components/nav/Nav';
 import Footer from './components/footer/Footer';
+import Contact from './pages/Contact/Contact';
 
 const Layout = () => {
 return (
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
       {
         path: "/product/:id",
         element: <OneProduct />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
       },
     ],
   },

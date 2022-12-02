@@ -5,6 +5,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import SearchIcon from '@mui/icons-material/Search';
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
+import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 
 const Nav = () => {
   return (
@@ -32,7 +33,22 @@ const Nav = () => {
       <div className="center">
         <Link to='/'>BURKEYSTORE</Link>
       </div>
-      <div className="right"></div>
+      <div className="right">
+      <Link to='/'>Home</Link>
+      <Link to='/'>About</Link>
+      <Link to='/'>Contact Us</Link>
+      <Link to='/'>Stores</Link>
+      <div className="icons">
+        <SearchIcon />
+        <PersonOutlineIcon />
+        <FavoriteBorderOutlinedIcon />
+        <div className="cart-icon">
+        <ShoppingCartOutlinedIcon />
+        <span>0</span>
+        </div>
+      </div>
+
+      </div>
       </div>
     </div>
   )
