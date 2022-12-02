@@ -10,7 +10,7 @@ import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 const Nav = () => {
   return (
     <div className='nav'>
-      <div className="center">
+      <div className="wrapper">
       <div className="left">
         <div className="item">
           <img src="assets/flag.png" alt="" />
@@ -21,23 +21,31 @@ const Nav = () => {
           <ExpandMoreIcon />
         </div>
         <div className="item">
-          <Link to='products/1'>Womens</Link>
+          <Link className='link' to='products/1'>Womens</Link>
         </div>
         <div className="item">
-          <Link to='products/2'>Mens</Link>
+          <Link className='link' to='products/2'>Mens</Link>
         </div>
         <div className="item">
-          <Link to='products/3'>Kids</Link>
+          <Link className='link' to='products/3'>Kids</Link>
         </div>
       </div>
       <div className="center">
-        <Link to='/'>BURKEYSTORE</Link>
+        <Link className='link' to='/'>BURKEYSTORE</Link>
       </div>
       <div className="right">
-      <Link to='/'>Home</Link>
-      <Link to='/'>About</Link>
-      <Link to='/'>Contact Us</Link>
-      <Link to='/'>Stores</Link>
+        <div className="item">
+      <Link className='link' to='/'>Home</Link>
+      </div>
+      <div className="item">
+      <Link className='link' to='/'>About</Link>
+      </div>
+      <div className="item">
+      <Link className='link' to='/'>Contact Us</Link>
+      </div>
+      <div className="item">
+      <Link className='link' to='/'>Stores</Link>
+      </div>
       <div className="icons">
         <SearchIcon />
         <PersonOutlineIcon />

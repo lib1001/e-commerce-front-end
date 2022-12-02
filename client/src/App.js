@@ -1,5 +1,5 @@
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom'
-import './App.css';
+import './App.scss';
 import Home from './pages/Home/Home';
 import OneProduct from './pages/OneProduct/OneProduct';
 import Products from './pages/Products/Products';
@@ -11,6 +11,7 @@ const Layout = () => {
 return (
   <div className='app'>
     <Nav />
+    <Home />
     <Outlet />
     <Footer />
   </div>
