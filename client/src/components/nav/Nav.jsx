@@ -1,5 +1,5 @@
 import React from 'react';
-import './nav.scss';
+import './Nav.scss';
 import { Link } from 'react-router-dom';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import SearchIcon from '@mui/icons-material/Search';
@@ -31,7 +31,7 @@ const Nav = () => {
         </div>
       </div>
       <div className="center">
-        <Link className='link' to='/'>BURKEYSTORE</Link>
+        <Link className='link' to='/'>BURKEY<span>STORE</span></Link>
       </div>
       <div className="right">
         <div className="item">

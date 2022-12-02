@@ -20,6 +20,9 @@
         .center {
             font-size: 30px;
             letter-spacing: 2px;
+            span {
+                color: gray;
+            }
         }
         .right {
             display: flex;
