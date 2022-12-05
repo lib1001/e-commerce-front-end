@@ -1,14 +1,14 @@
 import React from 'react';
-import './Contact.scss';
+import './Mailing.scss';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import GoogleIcon from '@mui/icons-material/Google';
 import PinterestIcon from '@mui/icons-material/Pinterest';
 
-const Contact = () => {
+const Mailing = () => {
   return (
-    <div className='contact'>
+    <div className='mailing'>
         <div className="wrapper">
             <span>JOIN OUR MAILING LIST</span>
             <div className="mail">
@@ -27,4 +27,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default Mailing

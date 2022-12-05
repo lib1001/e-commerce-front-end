@@ -13,7 +13,10 @@
     &:hover {
       .hoverImg {
         z-index: 2;
+        transform: scale(1.1);
+        transition-duration: 0.4s;
       }
+
     }
     span {
       position: absolute;

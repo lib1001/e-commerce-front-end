@@ -1,6 +1,6 @@
 import React from "react";
 import Categories from "../../components/Categories/Categories";
-import Contact from "../../components/Contact/Contact";
+import Mailing from "../../components/Mailing/Mailing";
 import Featured from "../../components/Featured/Featured";
 import Slider from "../../components/Slider/Slider";
 
@@ -11,7 +11,7 @@ const Home = () => {
       <Featured type="featured" />
       <Categories />
       <Featured type="trending" />
-      <Contact />
+      <Mailing />
     </div>
   );
 };
