@@ -1,8 +1,8 @@
 .slider {
     height: calc(100vh - 80px);
-    width: 100vw;
+    width: 98vw;
     position: relative;
-    overflow: hidden;
+    overflow-x: hidden;
 
     .container {
         display: flex;

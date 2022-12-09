@@ -1,6 +1,7 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './Nav.scss';
 import { Link } from 'react-router-dom';
+import Cart from '../Cart/Cart';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import SearchIcon from '@mui/icons-material/Search';
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
@@ -8,15 +9,14 @@ import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlin
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 
 const Nav = () => {
+  const [open, setOpen] = useState(false)
   return (
     <div className='nav'>
       <div className="wrapper">
       <div className="left">
+
         <div className="item">
-          <img src="assets/flag.png" alt="" />
-          <ExpandMoreIcon />
-        </div>
-        <div className="item">
+          <img src="https://freesvg.org/img/US-UK_Flag.png" alt="" className='flag'/>
           <span>USD</span>
           <ExpandMoreIcon />
         </div>
@@ -41,7 +41,7 @@ const Nav = () => {
       <Link className='link' to='/'>About</Link>
       </div>
       <div className="item">
-      <Link className='link' to='/'>Contact Us</Link>
+      <Link className='link' to='/contact'>Contact Us</Link>
       </div>
       <div className="item">
       <Link className='link' to='/'>Stores</Link>
@@ -50,7 +50,7 @@ const Nav = () => {
         <SearchIcon />
         <PersonOutlineIcon />
         <FavoriteBorderOutlinedIcon />
-        <div className="cart-icon">
+        <div className="cart-icon" onClick={() => setOpen(!open)}>
         <ShoppingCartOutlinedIcon />
         <span>0</span>
         </div>
@@ -58,6 +58,7 @@ const Nav = () => {
 
       </div>
       </div>
+      {open && <Cart />}
     </div>
   )
 }

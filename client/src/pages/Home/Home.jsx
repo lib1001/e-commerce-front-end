@@ -3,6 +3,7 @@ import Categories from "../../components/Categories/Categories";
 import Mailing from "../../components/Mailing/Mailing";
 import Featured from "../../components/Featured/Featured";
 import Slider from "../../components/Slider/Slider";
+import Cart from "../../components/Cart/Cart";
 
 const Home = () => {
   return (

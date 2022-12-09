@@ -6,16 +6,23 @@
         display: flex;
         justify-content: space-between;
 
-        .item {
-            display: flex;
-            align-items: center;
-            font-size: 18px;
-        }
-
+        
         .left {
             display: flex;
             align-items: center;
             gap: 25px;
+
+            .item {
+                display: flex;
+                align-items: center;
+                font-size: 18px;
+    
+                .flag {
+                    width: 20px;
+                    height: 30px;
+                    margin-right: 5px;
+                }
+            }
         }
         .center {
             font-size: 30px;
