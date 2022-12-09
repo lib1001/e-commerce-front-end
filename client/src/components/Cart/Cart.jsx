@@ -1,6 +1,7 @@
 import React from "react";
 import "./Cart.scss";
 import DeleteForeverOutlinedIcon from '@mui/icons-material/DeleteForeverOutlined';
+import DeleteOutlineOutlinedIcon from '@mui/icons-material/DeleteOutlineOutlined';
 
 const Cart = () => {
   const data = [
@@ -9,6 +10,7 @@ const Cart = () => {
       img: "https://images.pexels.com/photos/8074103/pexels-photo-8074103.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       img2: "https://images.pexels.com/photos/8218381/pexels-photo-8218381.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       isNew: true,
+      desc: "hi0",
       title: "Hat",
       oldPrice: 19,
       price: 12,
@@ -17,6 +19,7 @@ const Cart = () => {
       id: 2,
       img: "https://images.pexels.com/photos/1129019/pexels-photo-1129019.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       title: "T-Shirt",
+      desc: "YO",
       isNew: true,
       oldPrice: 40,
       price: 30,
@@ -42,7 +45,7 @@ const Cart = () => {
         <span>TOTAL</span>
       </div>
       <button>PROCEED TO CHECKOUT</button>
-      <span className="empty">EMPTY CART</span>
+      <span className="empty">Empty Cart</span>
     </div>
   );
 };
